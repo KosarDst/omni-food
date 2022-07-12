@@ -12,9 +12,10 @@
 }
 .nav-bar {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   background-color: #fdf2e9;
   height: 90px;
-  width: 2000px;
 }
 a {
   color: #333333;
@@ -24,27 +25,27 @@ a {
 ul {
   display: flex;
   list-style-type: none;
+  gap: 24px;
 }
 li {
   font-weight: 500;
   margin-top: 18px;
-  justify-items: end;
 }
 .nav-btnlink {
   background-color: #d9480f;
   color: #fff;
+  margin-right: 70px;
   padding: 12px 20px;
   border-radius: 8px;
 }
 .nav-btnlink:hover {
   color: #fff;
   background-color: #e8590c;
+  transition: 500ms all;
 }
 a:hover {
   color: #d9480f;
-}
-a:active {
-  border: 10px solid #ffd8a8;
+  transition: 500ms all;
 }
 .omnifoodlogo {
   display: inline-block;
@@ -134,6 +135,7 @@ a:active {
 .eatwell:hover {
   color: #fff;
   background-color: #f76707;
+  transition: 500ms all;
 }
 .learnmore {
   background-color: #fff;
@@ -154,10 +156,9 @@ a:active {
   color: #333333;
   background-color: rgba(255, 255, 255, 0.574);
   border: 5px solid #fff;
+  transition: 500ms all;
 }
-.learnmore:active {
-  border: 10px solid #ffd8a8;
-}
+
 /*
 ---------============----------
             Logo-feature
@@ -180,6 +181,80 @@ a:active {
 }
 /*
 ---------=================----------
-          second section
+          steps section
 ---------=================----------
 */
+.text-hiw {
+  font-size: 20px;
+  color: #cf711f;
+  margin-left: 200px;
+  margin-top: 150px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.stephead {
+  font-size: 40px;
+  margin-left: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/*======step01========*/
+.step-text {
+  display: flex;
+  width: 75%;
+  gap: 100px;
+}
+.steps {
+  width: 100%;
+}
+.step1 {
+  font-size: 90px;
+  color: #dddddd;
+  margin-left: 200px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.heading-s1 {
+  font-size: 30px;
+  margin-left: 200px;
+}
+.p-step1 {
+  color: #55556b;
+  margin-left: 200px;
+}
+.step1-img {
+  margin-top: 80px;
+  width: 60%;
+}
+.background01 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background01::before,
+.background01::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background01::before {
+  width: 90%;
+  padding-bottom: 90%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.background01::after {
+  width: 70%;
+  padding-bottom: 70%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
