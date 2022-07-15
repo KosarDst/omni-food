@@ -555,9 +555,89 @@ a:hover {
   text-align: center;
 }
 .plans {
+  width: 100%;
   display: flex;
+  margin-top: 60px;
+  justify-content: space-evenly;
 }
 .icon-fig {
   width: 40px;
   height: 40px;
+}
+.icon-fig {
+  stroke: #d9480f;
+  background-color: #fdf2e9;
+  padding: 20px;
+  border-radius: 45%;
+}
+/*
+---------=================----------
+          sign-in
+---------=================----------
+*/
+.signin-box {
+  border-radius: 8px;
+  margin-left: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 400px;
+  width: 900px;
+  box-shadow: 5px 8px 20px 6px #888888;
+  background-color: #cf711f;
+}
+.eating-img {
+  float: right;
+  display: flex;
+  width: 250px;
+  height: 400px;
+  border-radius: 8px;
+}
+input[type="text"] {
+  background-color: #fdf2e9;
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #fdf2e9;
+  border-radius: 8px;
+}
+select {
+  background-color: #fdf2e9;
+  width: 250px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #fdf2e9;
+  border-radius: 8px;
+}
+label {
+  display: block;
+  color: #45260a;
+}
+.form {
+  margin-left: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.signinlink {
+  background-color: #45260a;
+  color: #fff;
+  width: 200px;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+}
+.signinlink:hover {
+  background-color: #fff;
+}
+.signin-h1 {
+  color: #45260a;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+.signin-p {
+  color: #45260a;
+  margin-left: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
