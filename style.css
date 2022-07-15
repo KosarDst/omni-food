@@ -425,27 +425,139 @@ a:hover {
 ---------=================----------
 */
 .User-comments {
-  width: 100%;
-  height: 800px;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
   background-color: #fdf2e9;
+  align-items: center;
 }
 .tetimonials-h4 {
   color: #cf711f;
+  margin-left: 40px;
 }
 .tetimonials-h1 {
   font-size: 40px;
+  margin-left: 40px;
+}
+.commnets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.commnet-img {
+  width: 50px;
+  border-radius: 50%;
+}
+.text-comment {
+  color: #555555;
+  font-size: 20px;
+}
+.username {
+  color: #555555;
+  font-size: 18px;
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 0fr);
-  grid-template-rows: repeat(4, 0.5fr);
-  grid-gap: 15px;
-}
-.gallery__img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  grid-template-columns: repeat(3, 1fr);
 }
 .gallery__item {
-  margin: 0;
+  overflow: hidden;
+}
+.gallery__item img {
+  display: block;
+  transition: all 0.4s;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+}
+.gallery__img:hover {
+  transform: scale(1.1);
+}
+/*
+---------=================----------
+          pricing section
+---------=================----------
+*/
+.twobox {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.fbox {
+  width: 350px;
+  height: 500px;
+  border: 4px solid #fdf2e9;
+  border-radius: 8px;
+}
+.sbox {
+  width: 350px;
+  height: 500px;
+  background-color: #fdf2e9;
+  border-radius: 8px;
+}
+
+.sc-text {
+  color: #cf711f;
+  text-align: center;
+}
+.h1-sbox {
+  text-align: center;
+}
+.h1-sbox span {
+  font-size: 45px;
+}
+.p-box {
+  text-align: center;
+  color: #555555;
+}
+.ulboxli {
+  display: flex;
+  flex-direction: column;
+}
+.ulboxli-item {
+  color: #555555;
+}
+.sew {
+  color: #fff;
+  padding: 10px 15px;
+  background-color: #d9480f;
+  border-radius: 8px;
+}
+.sew:hover {
+  color: #fff;
+  background-color: #cf711f;
+  transition: all 500ms;
+}
+.centersetlink {
+  margin-top: 70px;
+  text-align: center;
+}
+.pricing-p {
+  color: #cf711f;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.eatw-h1 {
+  margin-top: 0;
+  margin-bottom: 100px;
+  margin-left: 150px;
+  font-size: 40px;
+}
+/*
+---------=================----------
+          pricing section
+---------=================----------
+*/
+.prices-p {
+  margin-top: 100px;
+  text-align: center;
+}
+.plans {
+  display: flex;
+}
+.icon-fig {
+  width: 40px;
+  height: 40px;
 }
