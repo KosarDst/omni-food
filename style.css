@@ -654,7 +654,7 @@ label {
     font-size: 16px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 840px) {
   .checkbtn {
     display: block;
   }
@@ -686,21 +686,39 @@ label {
 }
 
 /*...first section...*/
-@media (max-width: 84em) {
+@media (max-width: 840px) {
   .hero-box {
-    max-width: 120rem;
+    max-width: 1200px;
   }
 
   .big-p {
-    font-size: 4.4rem;
+    font-size: 44px;
   }
-
+  .learnmore {
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .signin-box {
+    justify-content: center;
+    height: 600px;
+    width: 450px;
+    margin: 0;
+    margin-left: 180px;
+    box-shadow: 5px 8px 20px 6px #888888;
+  }
+  .eating-img {
+    display: flex;
+    width: 125px;
+    height: 200px;
+    border-radius: 8px;
+  }
 }
 
-@media (max-width: 75em) {
+@media (max-width: 750px) {
   .steps {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
