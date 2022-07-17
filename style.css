@@ -14,6 +14,7 @@
   justify-content: space-between;
   background-color: #fdf2e9;
   height: 90px;
+  border-bottom: 1px solid #888888;
 }
 a {
   color: #333333;
@@ -638,12 +639,13 @@ label {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 /*------------Queries-----------*/
 /*...nav bar...*/
 #check {
   display: none;
 }
-@media (max-width: 952px) {
+@media (max-width: 840px) {
   .logo-image img {
     font-size: 30px;
     padding-left: 50px;
@@ -652,7 +654,7 @@ label {
     font-size: 16px;
   }
 }
-@media (max-width: 858px) {
+@media (max-width: 850px) {
   .checkbtn {
     display: block;
   }
@@ -680,5 +682,181 @@ label {
   }
   #check:checked ~ ul {
     left: 0;
+  }
+}
+
+/*...first section...*/
+@media (max-width: 84em) {
+  .hero-box {
+    max-width: 120rem;
+  }
+
+  .big-p {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 75em) {
+  .steps {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero-box {
+    gap: 4.8rem;
+  }
+
+  .Uscontainer {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .hero-box {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .box,
+  .hero-Image {
+    text-align: center;
+  }
+
+  .heroimg {
+    width: 60%;
+  }
+
+  .mealscustomer {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .featur-logo img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .card-body {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .User-comments {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .signin-box {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .signinlink {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .unordered-list {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .twobox,
+  .plans,
+  .prices {
+    width: 100%;
+  }
+}
+
+@media (max-width: 34em) {
+  .steps {
+    row-gap: 4.8rem;
+  }
+
+  .step-text {
+    grid-template-columns: 1fr;
+  }
+
+  .sew,
+  .sew:link,
+  .sew:visited,
+  .learnmore,
+  .learnmore:link,
+  .learnmore:visited,
+  .eatwell,
+  .eatwell:link,
+  .eatwell:visited,
+  .signinlink,
+  .signinlink:link,
+  .signinlink:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero-box {
+    padding: 0 3.2rem;
+  }
+
+  .heroimg {
+    width: 80%;
+  }
+
+  .featur-logo img {
+    height: 1.2rem;
+  }
+
+  .step-text:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-text:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-text {
+    transform: translateY(2.4rem);
+  }
+
+  .commnets {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .signin-box {
+    grid-template-columns: 1fr;
+  }
+
+  .signin-h1,
+  .signin-p {
+    padding: 3.2rem;
   }
 }
